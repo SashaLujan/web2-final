@@ -1,0 +1,25 @@
+4 - api rest
+    a)primero hay que crear los archivos de api, el controlador, la vista y tambien agregar los modelos que hacen falta o si ya existen 
+    agregar las funciones correspondientes.
+    hay que agregar un archivo que se llame cliente.api.controller.php que se encargue de las funciones de mostrar datos, modificar, eliminar.
+    tambien agregaria otros dos archivos actividad.api.controller y tarjeta.api.controller que se encarguen por separado de susa funciones como
+    mostrar el historial de actividades, el estado actual de la cuenta y tambien que muestre el listado de las tarjetas que tiene un cliente.
+    b)endpoint:
+    - api/cliente/:id, GET, cliente.api.controller, getCliente
+    - api/cliente/:id, PUT, cliente.api.controller, modificarDatos
+    - api/tarjeta/:idcliente, GET, tarjeta.api.controller, tarjetasXcliente
+    - api/actividad/kms, GET, actividad.api.controllet, saldoActual
+    - api/actividad/ , GET, actividad.api.controller, historialActividades
+    - api/tarjeta/:id, DELETE, tarjeta.api.controller, eliminarTarjeta
+    c)
+
+5 - 
+    a)1) el api rest es una interfaz que se ajusta a los limites de la arquitectura rest y permite la interaccion con los servicios web.
+       mapea de manera consistente los elementos de una aplicacion web. esto facilita la comunicion entre una app back-end y diferentes formas de
+       presentaciones front-end. Algunas de sus ventajas es que separa lo que es cliente y servidor, tiene mas visibilidad y confiabilidad, permite 
+       que una app acceda a base de datos desde diferentes servidores. es multiplataforma.
+       2)
+    b)1) renderiza el html de nuestros componentes en cadena de texto en la parte del servidor.
+        2) estos indican si se ha completado de manera satisfactoria una solicitud http especifica.
+        3)la sesion de un usuario es el elemento que engloba a las acciones que hace dicho usuario en un sitio. este puede abrir varias sesiones ya 
+        que una vez que finaliza dicha sesion se puede abrir una nueva.
